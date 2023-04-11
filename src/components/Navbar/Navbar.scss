@@ -1,0 +1,92 @@
+.navbar {
+
+    height: 80px;
+
+    .wrapper {
+        padding: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+
+        .item {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-right: 20px;
+
+        }
+
+
+
+        .left {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+            .item {
+
+                // ...existing styles
+                .dropdown {
+                    position: absolute;
+                    top: 50px;
+                    left: 0;
+                    width: 150px;
+                    background-color: #fff;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    z-index: 1000;
+
+                    .link {
+                        padding: 10px;
+                        color: #333;
+                        text-decoration: none;
+                        font-size: 14px;
+
+                        &:hover {
+                            background-color: #f0f0f0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .center {
+            font-size: 30px;
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+            .icons {
+                display: flex;
+                gap: 15px;
+                color: #777;
+                cursor: pointer;
+
+                .cartIcon {
+                    position: relative;
+
+                    span {
+                        font-size: 12px;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: blue;
+                        position: absolute;
+                        color: white;
+                        right: -10px;
+                        top: -10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
